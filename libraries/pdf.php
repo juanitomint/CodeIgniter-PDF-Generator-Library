@@ -14,6 +14,9 @@
 
 require_once(dirname(__FILE__) . '/dompdf/dompdf_config.inc.php');
 
+// Register autoload function so classes are automatically loaded
+spl_autoload_register('DOMPDF_autoload');
+
 class Pdf extends DOMPDF
 {
 	/**
